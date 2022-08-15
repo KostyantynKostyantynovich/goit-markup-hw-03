@@ -9,27 +9,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
  rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a class="title" href="./index.html">Web<span class="studio">Studio</span></a>
-        <ul>
-          <li><a class="page" href="./index.html">Студія</a></li>
-          <li><a class="page" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="page" href="#">Контакти</a></li>
+      <div class="container header-items">
+        <nav class="header-navegation">
+          <a class="title" href="./index.html">Web<span class="studio">Studio</span></a>
+          <ul class="header-pages">
+            <li class="navigation"><a class="page" href="./index.html">Студія</a></li>
+            <li class="navigation"><a class="page" href="./portfolio.html">Портфоліо</a></li>
+            <li class="navigation"><a class="page" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="contacts"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="contacts"><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </header>
+      </div>
+          </header>
     <main>
-        <section>
+        <section class="container section">
           <h1 class="invisible-title">portfolio</h1>
-            <ul>
+            <ul class="button-list">
                 <li><button class="portfolio-button" type="button">Все</button></li>
                 <li><button class="portfolio-button" type="button">Веб-сайти</button></li>
                 <li><button class="portfolio-button" type="button">Додатки</button></li>
@@ -85,17 +88,20 @@
             </ul>
         </section>
     </main>
+    
     <footer class="footer-elements">
-      <a class="footer-item" href="./index.html">Web<span class="footer-studio">Studio</span></a>
-      <address>
-        <ul>
-          <li>
-            <a class="footer-addres" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
-    </footer>
+      <div class="container">
+       <a class="footer-item" href="./index.html">Web<span class="footer-studio">Studio</span></a>
+       <address>
+         <ul class="footer-list">
+           <li class="footer-element">
+             <a class="footer-addres" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+           </li>
+           <li class="footer-element"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
+           <li class="footer-element"><a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a></li>
+         </ul>
+       </address>
+      </div>
+     </footer>
   </body>
 </html>
