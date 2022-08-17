@@ -24,6 +24,18 @@ ul {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 
 .container{
     width: 1200px;
@@ -39,6 +51,9 @@ ul {
 .header-items{
     display: flex;
     align-items: center;
+}
+
+.header-border{
     border-bottom: 1px solid var(--border-coolor);
 }
 
@@ -49,11 +64,9 @@ ul {
 
 .header-pages{
     display: flex;
-    margin: 0;
-    padding: 0;
+
     margin-left: 93px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+
 }
 
 .navigation:not(:last-child){
@@ -62,8 +75,6 @@ ul {
 
 .header-contacts{
     display: flex;
-    margin: 0;
-    padding: 0;
     margin-left:auto;
 }
 
@@ -87,6 +98,9 @@ font-family: var(--second-fond);
 
 
 .page{
+display: block;
+padding: 32px 0;
+
     font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -106,6 +120,9 @@ font-family: var(--second-fond);
 
 
 .contact{
+    display: block;
+    padding: 32px 0;
+
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -123,12 +140,16 @@ font-family: var(--second-fond);
 .first-block{
     background: var(--first-block-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .caption{
-    margin: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -181,7 +202,6 @@ margin: 0 auto;
     margin-right: 30px;
 }
 .subtitle{
-    margin: 0;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -192,7 +212,6 @@ margin: 0 auto;
 }
 
 .desc{
-    margin: 0;
 
     font-weight: 400;
     font-size: 14px;
@@ -202,9 +221,11 @@ margin: 0 auto;
 }
 
 /* Робота */
+.work-high{
+    padding-top: 0;
+}
 
 .third-block-title{
-    margin: 0;
     margin-bottom: 50px;
 
 font-weight: 700;
@@ -222,6 +243,12 @@ letter-spacing: 0.03em;
     margin-right: 30px;
 }
 
+.image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Наша команда */
 
 .quarter-block{
@@ -230,7 +257,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .quarter-block-title{
-    margin: 0;
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -256,8 +282,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .name{
-    margin: 0;
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -268,8 +293,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .work{
-    margin: 0;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
     font-weight: 400;
     font-size: 16px;
@@ -284,8 +308,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .button-list{
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .button-position:not(:last-child){
@@ -295,14 +317,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .progect-list{
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    margin-top: 50px;
 }
 
 .progect-list-item{
     margin: 0;
     padding: 0;
-    width: 370;
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -315,7 +336,6 @@ margin-bottom: 0;
 
 .portfolio-button{
     margin: 0;
-    margin-bottom: 50px;
     padding: 6px 22px;
 
 font-family: inherit;
@@ -345,9 +365,7 @@ border: 1px solid transparent;
 }
 
 .name-progect{
-    margin: 0;
-    padding: 0;
-
+    margin-bottom: 4px;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -356,9 +374,6 @@ letter-spacing: 0.06em;;
 
 
 .type-progect{
-    margin: 0;
-    padding: 0;
-
 font-weight: 400;
 font-size: 16px;
 line-height: 30px;
@@ -372,12 +387,13 @@ color: var(--text-color);
 
 .footer-elements{
     background-color: var(--first-block-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-item{
     display: inline-block;
     margin: 0;
-    margin-top: 58px;
     margin-bottom: 20px;
 
 font-family: var(--second-fond);
@@ -395,9 +411,6 @@ text-decoration: none;
 
 .footer-list{
     display: inline-block;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 62px;
 }
 
 .footer-element:not(:last-child){

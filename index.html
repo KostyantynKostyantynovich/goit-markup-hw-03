@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header-border">
 <div class="container header-items">
   <nav class="header-navegation">
     <a class="title" href="./index.html">Web<span class="studio">Studio</span></a>
@@ -37,8 +37,9 @@
 
       <!-- Переваги -->
       <section class="section">
-        <h2 class="invisible-title">Наші особливості</h2>
-        <ul class="container advantages">
+        <div class="container">
+          <h2 class="invisible-title">Наші особливості</h2>
+        <ul class="advantages">
           <li class="size">
             <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="desc">
@@ -67,53 +68,57 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Робота -->
-      <section class="section">
-        <h2 class="third-block-title">Чим ми займаємося</h2>
-        <ul class="container work-position">
+      <section class="section work-high">
+        <div class="container">
+          <h2 class="third-block-title">Чим ми займаємося</h2>
+        <ul class="work-position">
           <li class="work-pictures">
-            <img src="images/kode.jpg" alt="робота над кодом" width="370" />
+            <img class="image" src="images/kode.jpg" alt="робота над кодом" width="370" />
           </li>
           <li class="work-pictures">
-            <img
-              src="images/program.jpg"
+            <img class="image" src="images/program.jpg"
               alt="робота над програмою"
               width="370"
             />
           </li>
           <li class="work-pictures">
-            <img src="images/tablet.jpg" alt="робота з плашетом" width="370" />
+            <img class="image" src="images/tablet.jpg" alt="робота з плашетом" width="370" />
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Наша команда -->
       <section class="quarter-block section"> 
+       <div class="container">
         <h2 class="quarter-block-title">Наша команда</h2>
-        <ul class="container command">
+        <ul class="command">
           <li class="box">
-            <img src="images/Ігор.jpg" alt="Ігор Дем'яненко" width="270" />
+            <img class="image" src="images/Ігор.jpg" alt="Ігор Дем'яненко" width="270" />
             <h3 class="name">Ігор Дем'яненко</h3>
             <p class="work" lang="en">Product Designer</p>
           </li>
           <li class="box">
-            <img src="images/Ольга.jpg" alt="Ольга Рєпіна" width="270" />
+            <img class="image" src="images/Ольга.jpg" alt="Ольга Рєпіна" width="270" />
             <h3 class="name">Ольга Рєпіна</h3>
             <p class="work" lang="en">Frontend Developer</p>
           </li>
           <li class="box">
-            <img src="images/Микола.jpg" alt="Микола Тарасов" width="270" />
+            <img class="image" src="images/Микола.jpg" alt="Микола Тарасов" width="270" />
             <h3 class="name">Микола Тарасов</h3>
             <p class="work" lang="en">Marketing</p>
           </li>
           <li class="box">
-            <img src="images/Михайло.jpg" alt="Михайло Єрмаков" width="270" />
+            <img class="image" src="images/Михайло.jpg" alt="Михайло Єрмаков" width="270" />
             <h3 class="name">Михайло Єрмаков</h3>
             <p class="work" lang="en">UI Designer</p>
-          </li>
+          </li> 
         </ul>
+       </div>
       </section>
     </main>
     
